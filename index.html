@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <section id="headerFirstSection">
+        <a href="index.html"><h1 id="Title">TheaterHub</h1></a>
+        <div id="mySecNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeSecBurgNav()">&times;</a>
+
+            <!-- Overlay content -->
+            <div class="overlay-content">
+              <a href="index 2.html">Sign In</a>
+              <a href="index 3.html">About</a>
+              <a href="index 3.html#contact_form">Contact Us</a>
+            </div>
+        </div>
+        <span id="burgerSecOpenBtn" class="burgerOpenBtn" onclick="openSecBurgNav()">&#9776;</span>
+      </section>
+      <nav>
+        <div class="navbar">
+          <ul class="navbar-menu">
+            <li class="nav-container-items">               
+              <!-- The overlay -->
+              <div id="myNav" class="overlay">
+
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeBurgNav()">&times;</a>
+
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                  <a href="index 3.html">About</a>
+                  <a href="index 3.html#contact_form">Contact Us</a>
+                </div>
+
+              </div>
+
+              <!-- Use any element to open/show the overlay navigation menu -->
+              <span id="burgerOpenBtn" class="burgerOpenBtn" onclick="openBurgNav()">&#9776;</span>
+            </li> 
+            <li class="nav-container-items">
+              <form>
+                <!--FilterCategory-->
+                <div class="filterContainer">
+                    <select name="filter" id="filterMovies" class="rounded">
+                      <option value="all">All</option>
+                      <option value="movie">Movies</option>
+                      <option value="celeb">Celebs</option>
+                      <option value="tvShows">Shows</option>
+                    </select>
+                </div>
+                <label class="search" for="inpt_search">
+                  <input id="txtSearch" type="text" placeholder="Search..."/>
+                </label>
+                <button id="searchBtn" type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </li>
+            <li class="nav-container-items"><a id="navbar-signin" href="index 2.html">Sign In</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="searchBar" id="searchbar">
+          <!--Results-->
+        <section>
+          <h2 id="trendingMovies">Current Popular Movies</h2>
+          <h2 id="resultTitle">Results</h2>
+        </section>
+        <section>
+          <div class="searchResults">
+            <div id="searchresults"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo"><h1>TheaterHub</h1></div>
+        <div class="footer-signinsection">
+          <a href="index 2.html">
+            <button id="footer-signin-button">Sign In</button>
+          </a>
+        </div>
+        <div class="credits">
+          <table>
+            <tr>
+              <th>Site Sections</th>
+              <th>Responsible</th>
+              <th>Country</th>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>Mwut da heel</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>HTML</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+            </tr>
+            <tr>
+              <td>SECOND CSS</td>
+              <td>Roland Mendel</td>
+              <td>Austria</td>
+            </tr>
+            <tr>
+              <td>Javasript</td>
+              <td>Mr Bennett</td>
+              <td>UK</td>
+            </tr>
+          </table>
+        </div>
+        <div class="footer-links">@all rights reserved by William Ingo 2023</div>
+      </div>
+    </footer>
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
